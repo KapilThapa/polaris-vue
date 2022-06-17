@@ -123,7 +123,7 @@
             },
             hasHeaderContent() {
                 return (this.title != null && this.title !== '') ||
-                    this.primaryAction != null ||
+                    (this.primaryAction != null && this.primaryAction.length > 0) ||
                     this.thumbnail ||
                     (this.secondaryActions != null && this.secondaryActions.length > 0) ||
                     (this.actionGroups != null && this.actionGroups.length > 0) ||
